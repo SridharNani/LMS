@@ -5,7 +5,7 @@ from django.utils.translation import gettext_lazy as _
 
 class MyUser(AbstractUser):
     USERNAME_FIELD = 'email'
-    email = models.EmailField(_('email address'), unique=True)
+    email = models.EmailField(_('email address'), unique=True) #unique email feild
     REQUIRED_FIELDS = ['username'] # removes email from REQUIRED_FIELDS
 
     def __str__(self):
